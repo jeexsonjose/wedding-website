@@ -827,6 +827,58 @@ html {
         text-align: center;
     }
 
+    .modal {
+        padding: 16px;
+        overflow-y: auto;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        padding: 24px 18px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .modal-content h2 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+    }
+
+    .modal-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .close {
+        right: 14px;
+        top: 10px;
+        font-size: 28px;
+    }
+
+    .venue-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .venue-grid > div {
+        flex: 1 1 100%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .contact-card {
+        padding: 18px;
+    }
+
+    .contact-card h3 {
+        font-size: 16px;
+    }
+
 }
 
 
