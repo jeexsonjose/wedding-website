@@ -828,17 +828,26 @@ html {
     }
 
     .modal {
-        padding: 16px;
+        padding: 12px;
         overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     .modal-content {
-        width: 100%;
-        max-width: none;
+        width: calc(100vw - 24px);
+        max-width: 650px;
         margin: 0 auto;
-        padding: 24px 18px;
+        padding: 20px 16px;
         border-radius: 20px;
         box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    #aboutModal .modal-content {
+        width: calc(100vw - 24px);
+        max-width: calc(100vw - 24px);
+        padding: 20px 16px;
     }
 
     .modal-content h2 {
