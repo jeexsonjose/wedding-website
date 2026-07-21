@@ -70,6 +70,8 @@ startCountdown(
 
 
 
+const menuToggle = document.querySelector('.menu-toggle');
+const menuItems = document.querySelector('.menu-items');
 const storyLink = document.getElementById('story-link');
 const contactLink = document.getElementById('contact-link');
 const venueLink = document.getElementById('venue-link');
@@ -80,23 +82,32 @@ const venueModal = document.getElementById('venueModal');
 const aboutModal = document.getElementById('aboutModal');
 const closeButtons = document.querySelectorAll('.modal .close');
 
-storyLink.addEventListener('click', event => {
-    event.preventDefault();
+menuToggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    menuItems.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', menuItems.classList.contains('active'));
+});
+
+[storyLink, contactLink, venueLink, aboutLink].forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        menuItems.classList.remove('active');
+    });
+});
+
+storyLink.addEventListener('click', () => {
     storyModal.style.display = 'block';
 });
 
-contactLink.addEventListener('click', event => {
-    event.preventDefault();
+contactLink.addEventListener('click', () => {
     contactModal.style.display = 'block';
 });
 
-venueLink.addEventListener('click', event => {
-    event.preventDefault();
+venueLink.addEventListener('click', () => {
     venueModal.style.display = 'block';
 });
 
-aboutLink.addEventListener('click', event => {
-    event.preventDefault();
+aboutLink.addEventListener('click', () => {
     aboutModal.style.display = 'block';
 });
 
@@ -114,6 +125,11 @@ window.addEventListener('click', event => {
     if (event.target === contactModal) contactModal.style.display = 'none';
     if (event.target === venueModal) venueModal.style.display = 'none';
     if (event.target === aboutModal) aboutModal.style.display = 'none';
+
+    if (!event.target.closest('.side-menu')) {
+        menuItems.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
 });
 
 // Remove the duplicate listener below - delete these lines:
