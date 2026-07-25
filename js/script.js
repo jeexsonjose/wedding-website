@@ -132,13 +132,6 @@ window.addEventListener('click', event => {
     }
 });
 
-// Remove the duplicate listener below - delete these lines:
-// window.addEventListener('click', event => {
-//     if (event.target === storyModal) storyModal.style.display = 'none';
-//     if (event.target === contactModal) contactModal.style.display = 'none';
-//     if (event.target === venueModal) venueModal.style.display = 'none';
-// });
-
 const people = {
 
     jeexson:{
@@ -150,7 +143,7 @@ Software Engineer
 
 Currently living in Belgium.
 
-Loves travelling, playing music and volleyball.
+Loves travelling, playing music and sports.
 
 Believes every journey is
 better when shared with
@@ -163,13 +156,14 @@ someone special.
         name:"Julie Mathew",
 
         description:`
-Kind-hearted and family-oriented.
+Marketting Associate at Grant Thornton.
+Currently living in Bangalore.
+
+Loves reading, and exploring new places.
 
 Believes in love, laughter,
 and making memories together.
 
-Always brings warmth and
-positivity wherever she goes.
 `
     }
 

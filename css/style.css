@@ -635,6 +635,15 @@ html {
     font-weight: 700;
 }
 
+/* Date/time shown under venue headings */
+.venue-datetime {
+    font-family: 'Avenir', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 8px;
+    color: #050505;
+    margin: 0.25rem 0 0.75rem;
+    line-height: 1.4;
+}
+
 .venue-grid p {
     margin: 0.25rem 0;
     line-height: 1.6;
