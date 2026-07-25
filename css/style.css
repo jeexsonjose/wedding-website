@@ -636,12 +636,14 @@ html {
 }
 
 /* Date/time shown under venue headings */
-.venue-datetime {
-    font-family: 'Avenir', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    font-size: 8px;
-    color: #050505;
+.modal-content p.venue-datetime {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: #000000;
     margin: 0.25rem 0 0.75rem;
     line-height: 1.4;
+    font-style: italic;
+    font-variant-numeric: lining-nums;
 }
 
 .venue-grid p {
