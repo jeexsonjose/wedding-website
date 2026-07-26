@@ -382,6 +382,7 @@ body{
 
 .tagline {
 
+    position: relative;
     font-family:'Playfair Display', serif;
 
     font-style:italic;
@@ -389,7 +390,37 @@ body{
     font-size:22px;
 
     color:#777;
+    padding-right: 0;
+    min-height: 72px;
 
+}
+
+.quote-citation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #777;
+    margin: 0;
+}
+
+.tagline {
+    overflow: visible;
+}
+
+@media (max-width: 768px) {
+    .tagline {
+        padding-right: 0;
+        min-height: auto;
+    }
+    .quote-citation {
+        font-size: 16px;
+        text-align: right;
+        margin-top: 8px;
+    }
 }
 
 h1{
