@@ -1,0 +1,24 @@
+{
+  "name": "Jeexson & Julie Wedding",
+  "short_name": "Wedding",
+  "description": "Wedding invitation and details for Jeexson & Julie",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff8f5",
+  "theme_color": "#8b4b3b",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/app-rounded.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "images/app.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
