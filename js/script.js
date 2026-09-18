@@ -51,7 +51,7 @@ function startCountdown(targetDate, daysId, hoursId, minutesId, secondsId) {
 
 // Engagement Countdown
 startCountdown(
-    "October 22, 2026 11:00:00",
+    "October 22, 2026 11:30:00",
     "eng-days",
     "eng-hours",
     "eng-minutes",
@@ -61,7 +61,7 @@ startCountdown(
 
 // Wedding Countdown
 startCountdown(
-    "October 26, 2026 11:00:00",
+    "October 26, 2026 10:30:00",
     "wed-days",
     "wed-hours",
     "wed-minutes",
