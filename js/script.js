@@ -156,7 +156,7 @@ someone special.
         name:"Julie Mathew",
 
         description:`
-Marketting Associate at Grant Thornton.
+Marketing Associate at Grant Thornton.
 Currently living in Bangalore.
 
 Loves reading, and exploring new places.
